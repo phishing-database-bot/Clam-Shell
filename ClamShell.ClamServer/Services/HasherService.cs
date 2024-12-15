@@ -7,7 +7,7 @@ namespace ClamShell.ClamServer.Services
 {
     public class HasherService
     {
-        private const string Url = "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/ALL-phishing-domains.tar.gz";
+        private const string Url = "https://phish.co.za/latest/ALL-phishing-domains.tar.gz";
         private const double Interval = 12 * 60 * 60 * 1000;
         private HashSet<string> urlHashes = new HashSet<string>();
         private string currentHash = string.Empty;
